@@ -1,11 +1,12 @@
-CMakeFiles/main.dir/board.cpp.o: \
-  /Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro/board.cpp \
-  /Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro/board.h \
-  /Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro/Ocell.h \
-  /Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro/kcell.h \
-  /Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro/sum_list.h \
-  /Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro/cell.h \
-  /Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro/general.h \
+CMakeFiles/main.dir/game.cpp.o: \
+  /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/game.cpp \
+  /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/game.h \
+  /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/board.h \
+  /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/Ocell.h \
+  /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/kcell.h \
+  /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/sum_list.h \
+  /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/cell.h \
+  /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/general.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__config_site \

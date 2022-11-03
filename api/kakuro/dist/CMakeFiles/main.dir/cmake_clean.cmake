@@ -7,8 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/kcell.cpp.o.d"
   "CMakeFiles/main.dir/main.cpp.o"
   "CMakeFiles/main.dir/main.cpp.o.d"
+  "main.cpython-310-darwin.so"
   "main.pdb"
-  "main.so"
 )
 
 # Per-language clean rules from dependency scanning.

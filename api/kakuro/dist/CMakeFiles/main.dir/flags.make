@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = -Dmain_EXPORTS
 
-CXX_INCLUDES = -I/Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro/pybind11/include -I/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7
+CXX_INCLUDES = -I/Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/pybind11/include -I/usr/local/opt/python@3.10/Frameworks/Python.framework/Versions/3.10/include/python3.10
 
 CXX_FLAGS =  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fvisibility=hidden -std=c++14 -flto
 

@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.21.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro
+CMAKE_SOURCE_DIR = /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro/dist
+CMAKE_BINARY_DIR = /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/dist
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro/dist && $(CMAKE_COMMAND) -E cmake_progress_start /Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro/dist/CMakeFiles /Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro/dist/pybind11//CMakeFiles/progress.marks
-	cd /Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro/dist && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pybind11/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro/dist/CMakeFiles 0
+	cd /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/dist && $(CMAKE_COMMAND) -E cmake_progress_start /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/dist/CMakeFiles /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/dist/pybind11//CMakeFiles/progress.marks
+	cd /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/dist && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pybind11/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/dist/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro/dist && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pybind11/clean
+	cd /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/dist && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pybind11/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,17 +103,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro/dist && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pybind11/preinstall
+	cd /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/dist && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pybind11/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro/dist && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pybind11/preinstall
+	cd /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/dist && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pybind11/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro/dist && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/dist && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -135,6 +135,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/liorsht/MyThings/MyProjects/gems/gems-flask/kakuro/dist && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/liorsht/MyThings/MyProjects/gems/gems-flask/api/kakuro/dist && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
