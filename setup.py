@@ -20,6 +20,7 @@ ext_modules = [
     Pybind11Extension("kakuro",
         ["src/main.cpp","src/game.cpp","src/board.cpp","src/kcell.cpp"],
         # Example: passing in the version to the compiled code
+        extra_compile_args=['-O3', '-std=c++14'],
         define_macros = [('VERSION_INFO', __version__)],
         ),
 ]
