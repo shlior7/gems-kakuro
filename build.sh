@@ -1,2 +1,2 @@
-python -m ensurepip --upgrade
-python -m pip install . -vvv
+python3 -m ensurepip --upgrade
+python3 -m pip install . -vvv
