@@ -1,6 +1,8 @@
-from wsgi import app
 from flask import Flask, render_template
 import kakuro as k
+
+app = Flask(__name__)
+
 
 @app.route('/')
 def hello():
