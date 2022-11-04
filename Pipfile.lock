@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f7f1cea682a03d85328caf2f88382c4380283d3892a9ba31b374784fb29536c4"
+            "sha256": "ff3fe668800c986288e3c9e6a2e77c14db8970e688dc997b0880313cc8f2e41e"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -31,14 +31,6 @@
             ],
             "index": "pypi",
             "version": "==2.2.2"
-        },
-        "importlib-metadata": {
-            "hashes": [
-                "sha256:da31db32b304314d044d3c12c79bd59e307889b287ad12ff387b3500835fc2ab",
-                "sha256:ddb0e35065e8938f867ed4928d0ae5bf2a53b7773871bfe6bcc7e4fcdc7dea43"
-            ],
-            "markers": "python_version < '3.10'",
-            "version": "==5.0.0"
         },
         "itsdangerous": {
             "hashes": [
@@ -102,6 +94,22 @@
             "markers": "python_version >= '3.7'",
             "version": "==2.1.1"
         },
+        "pybind11": {
+            "hashes": [
+                "sha256:c9571b8a6607c8e90ea156a2a455383b9911f89da414e9f5e251ab58dc3e3c71",
+                "sha256:ebf3eeac46859a2e10077ae45378ba3f33d999a9064697a3464fba1a4a04fc0a"
+            ],
+            "index": "pypi",
+            "version": "==2.10.1"
+        },
+        "setuptools": {
+            "hashes": [
+                "sha256:1d44e0b7c64da900a9164e9344f647204a05b32d6c68ce785b6cfad8a2d81646",
+                "sha256:4248cb506794bececcddeddb1678bc722f9cfcacf02f98f7c0af6b9ed893caf2"
+            ],
+            "index": "pypi",
+            "version": "==42"
+        },
         "werkzeug": {
             "hashes": [
                 "sha256:7ea2d48322cc7c0f8b3a215ed73eabd7b5d75d0b50e31ab006286ccff9e00b8f",
@@ -109,14 +117,6 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==2.2.2"
-        },
-        "zipp": {
-            "hashes": [
-                "sha256:4fcb6f278987a6605757302a6e40e896257570d11c51628968ccb2a47e80c6c1",
-                "sha256:7a7262fd930bd3e36c50b9a64897aec3fafff3dfdeec9623ae22b40e93f99bb8"
-            ],
-            "markers": "python_version >= '3.7'",
-            "version": "==3.10.0"
         }
     },
     "develop": {}

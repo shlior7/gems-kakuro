@@ -9,9 +9,9 @@ Building with setuptools
 For projects on PyPI, building with setuptools is the way to go. Sylvain Corlay
 has kindly provided an example project which shows how to set up everything,
 including automatic generation of documentation using Sphinx. Please refer to
-the [python_example]_ repository.
+the [kakuro]_ repository.
 
-.. [python_example] https://github.com/pybind/python_example
+.. [kakuro] https://github.com/pybind/kakuro
 
 Building with cppimport
 ========================

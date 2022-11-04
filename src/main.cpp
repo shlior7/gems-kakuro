@@ -2,17 +2,18 @@
 #include <iostream>
 #include <pybind11/stl.h>
 #include "stdio.h"
-#include "game.h"
+// #include "game.h"
 
 #define STRINGIFY(x) #x
 #define MACRO_STRINGIFY(x) STRINGIFY(x)
 
 std::vector<std::vector<int>> solve_kakuro(std::vector<std::vector<int>> board)
 {
-    Game kakuro(board);
-    kakuro.solver();
-    kakuro.game_board->print();
-    return kakuro.game_board->toVector();
+    // Game kakuro(board);
+    // kakuro.solver();
+    // kakuro.game_board->print();
+    // return kakuro.game_board->toVector();
+    return board;
 }
 
 namespace py = pybind11;

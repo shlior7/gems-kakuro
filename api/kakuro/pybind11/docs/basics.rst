@@ -134,13 +134,13 @@ For more details on the required compiler flags on Linux and MacOS, see
 :ref:`building_manually`. For complete cross-platform compilation instructions,
 refer to the :ref:`compiling` page.
 
-The `python_example`_ and `cmake_example`_ repositories are also a good place
+The `kakuro`_ and `cmake_example`_ repositories are also a good place
 to start. They are both complete project examples with cross-platform build
-systems. The only difference between the two is that `python_example`_ uses
+systems. The only difference between the two is that `kakuro`_ uses
 Python's ``setuptools`` to build the module, while `cmake_example`_ uses CMake
 (which may be preferable for existing C++ projects).
 
-.. _python_example: https://github.com/pybind/python_example
+.. _kakuro: https://github.com/pybind/kakuro
 .. _cmake_example: https://github.com/pybind/cmake_example
 
 Building the above C++ code will produce a binary module file that can be

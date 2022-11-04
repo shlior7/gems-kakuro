@@ -1,0 +1,9 @@
+README.md
+setup.py
+kakuro.egg-info/PKG-INFO
+kakuro.egg-info/SOURCES.txt
+kakuro.egg-info/dependency_links.txt
+kakuro.egg-info/not-zip-safe
+kakuro.egg-info/requires.txt
+kakuro.egg-info/top_level.txt
+src/main.cpp

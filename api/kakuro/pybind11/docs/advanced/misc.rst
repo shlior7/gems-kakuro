@@ -222,7 +222,7 @@ Generating documentation using Sphinx
 
 Sphinx [#f4]_ has the ability to inspect the signatures and documentation
 strings in pybind11-based extension modules to automatically generate beautiful
-documentation in a variety formats. The python_example repository [#f5]_ contains a
+documentation in a variety formats. The kakuro repository [#f5]_ contains a
 simple example repository which uses this approach.
 
 There are two potential gotchas when using this approach: first, make sure that
@@ -269,4 +269,4 @@ lifetime of the ``options`` instance. When it goes out of scope at the end of th
 the default settings are restored to prevent unwanted side effects.
 
 .. [#f4] http://www.sphinx-doc.org
-.. [#f5] http://github.com/pybind/python_example
+.. [#f5] http://github.com/pybind/kakuro
