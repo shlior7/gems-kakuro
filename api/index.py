@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from kakuro import solve_kakuro
+# from kakuro import solve_kakuro
 
 app = Flask(__name__)
 
@@ -120,5 +120,5 @@ def hello():
                 -1,
             ],
         ]
-    result = solve_kakuro(kakuro_board)
-    return result
+    # result = solve_kakuro(kakuro_board)
+    return {'result':kakuro_board}
