@@ -11,7 +11,7 @@ build:
 
 requirements:
   build:
-    - {{ compiler('cxx') }}
+    - {{ compiler('gcc-4.8') }}
 
   host:
     - python
