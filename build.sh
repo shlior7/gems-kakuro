@@ -4,5 +4,6 @@ virtualenv .venv
 source .venv/bin/activate
 python3 -m pip install . -vvv
 ls -A
-cd .venv/lib
-ls
+cd .venv/lib/python3.9/site-packages
+echo "packages"
+ls -A
