@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from kakuro.dist.main import solve_kakuro
+# from kakuro.main import solve_kakuro
 
 app = Flask(__name__)
 
@@ -120,11 +120,5 @@ def hello():
                 -1,
             ],
         ]
-    result = solve_kakuro(kakuro)
+    result = kakuro
     return result
-
-
-@app.route('/result')
-def result():
-   dict = {'phy':50,'che':60,'maths':70}
-   return render_template('result.html', result = dict)
