@@ -1,11 +1,12 @@
 from flask import Flask, render_template
-import kakuro as k
+# import kakuro as k
 
 app = Flask(__name__)
 
-
 @app.route('/')
 def hello():
+    k = __import__('kakuro')
+    
     kakuro_board = [
             [
                 -1,
