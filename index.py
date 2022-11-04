@@ -1,9 +1,12 @@
-from flask import Flask, render_template
+from flask import Flask
+import mapping
+from importlib import reload 	
 
 app = Flask(__name__)
 
 @app.route('/')
 def hello():
+    reload(mapping)
     help('modules')
     k = __import__('kakuro')
     kakuro_board = [
