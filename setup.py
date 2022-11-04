@@ -23,6 +23,7 @@ ext_modules = [
         define_macros = [('VERSION_INFO', __version__)],
         ),
 ]
+ext_modules[0].cxx_std = 11
 
 setup(
     name="kakuro",
