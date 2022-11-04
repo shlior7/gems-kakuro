@@ -18,7 +18,7 @@ __version__ = "0.0.1"
 
 ext_modules = [
     Pybind11Extension("kakuro",
-        ["src/main.cpp"],
+        ["src/main.cpp","src/game.cpp","src/board.cpp","src/kcell.cpp"],
         # Example: passing in the version to the compiled code
         define_macros = [('VERSION_INFO', __version__)],
         ),

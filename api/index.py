@@ -1,12 +1,12 @@
 from flask import Flask, render_template
-# from kakuro.main import solve_kakuro
+from kakuro import solve_kakuro
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def hello():
-    kakuro = [
+    kakuro_board = [
             [
                 -1,
                 -1,
@@ -120,5 +120,5 @@ def hello():
                 -1,
             ],
         ]
-    result = kakuro
+    result = solve_kakuro(kakuro_board)
     return result
