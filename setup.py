@@ -3,7 +3,7 @@ import sys
 # Available at setup time due to pyproject.toml
 from pybind11 import get_cmake_dir
 from pybind11.setup_helpers import Pybind11Extension, build_ext
-from setuptools import setup
+from setuptools import setup,find_packages
 
 __version__ = "0.0.1"
 
@@ -34,10 +34,15 @@ setup(
     description="A test project using pybind11",
     long_description="",
     ext_modules=ext_modules,
+    include_package_data=True,
+    packages=find_packages(),
+    install_requires=[
+    'Flask>=2.2.2',
+    'pybind11>=2.10.1',],
     extras_require={"test": "pytest"},
     # Currently, build_ext only provides an optional "highest supported C++
     # level" feature, but in the future it may provide more features.
     cmdclass={"build_ext": build_ext},
     zip_safe=False,
-    python_requires=">=3.7",
+    python_requires=">=3.9",
 )
