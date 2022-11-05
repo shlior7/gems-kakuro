@@ -2,15 +2,15 @@
     "version": 2,
     "builds": [
         {
+            "src": "./index.py",
+            "use": "@vercel/python"
+        },
+        {
             "src": "build.sh",
             "use": "@vercel/static-build",
             "config": {
                 "distDir": "build"
             }
-        },
-        {
-            "src": "./index.py",
-            "use": "@vercel/python"
         }
     ],
     "routes": [
