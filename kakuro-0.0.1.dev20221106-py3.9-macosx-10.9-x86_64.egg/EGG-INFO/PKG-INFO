@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: kakuro
+Version: 0.0.1.dev20221106
+Summary: A test project using pybind11
+Home-page: https://github.com/pybind/kakuro
+Author: Sylvain Corlay
+Author-email: sylvain.corlay@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.9

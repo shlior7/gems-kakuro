@@ -3,3 +3,4 @@ build/
 dist/
 kakuro.egg-info/
 venv/
+__pycache__/

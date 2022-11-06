@@ -3,7 +3,7 @@ import sys
 # Available at setup time due to pyproject.toml
 from pybind11 import get_cmake_dir
 from pybind11.setup_helpers import Pybind11Extension, build_ext
-from setuptools import setup,find_packages
+from setuptools import setup, find_packages
 
 __version__ = "0.0.1"
 
@@ -14,21 +14,21 @@ __version__ = "0.0.1"
 #
 # Note:
 #   Sort input source files if you glob sources to ensure bit-for-bit
-#   reproducible builds (https://github.com/pybind/kakuro/pull/53)
 
 ext_modules = [
-    Pybind11Extension("kakuro",
-        ["src/main.cpp","src/game.cpp","src/board.cpp","src/kcell.cpp"],
+    Pybind11Extension(
+        "kakuro",
+        ["src/main.cpp", "src/game.cpp", "src/board.cpp", "src/kcell.cpp"],
         # Example: passing in the version to the compiled code
         cxx_std=14,
-        define_macros = [('VERSION_INFO', __version__)],
-        ),
+        define_macros=[('VERSION_INFO', __version__)],
+    ),
 ]
 
 setup(
     name="kakuro",
     version=__version__,
-    author="Sylvain Corlay",
+    author="Lior Shtaimberg",
     author_email="sylvain.corlay@gmail.com",
     url="https://github.com/pybind/kakuro",
     description="A test project using pybind11",
