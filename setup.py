@@ -29,10 +29,6 @@ setup(
     name="kakuro",
     version=__version__,
     author="Lior Shtaimberg",
-    author_email="sylvain.corlay@gmail.com",
-    url="https://github.com/pybind/kakuro",
-    description="A test project using pybind11",
-    long_description="",
     ext_modules=ext_modules,
     # Currently, build_ext only provides an optional "highest supported C++
     # level" feature, but in the future it may provide more features.

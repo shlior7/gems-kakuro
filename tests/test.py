@@ -1,4 +1,4 @@
-import kakuro as m
+import kakuro.kakuro as m
 
 kakuro_board = [
             [
