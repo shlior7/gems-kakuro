@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request, jsonify
 from kakuro import solve_kakuro
 
 app = Flask(__name__)
@@ -120,15 +120,19 @@ def hello():
             -1,
         ],
     ]
+
     result = solve_kakuro(kakuro_board)
     return {'result': result}
 
 
-@app.route('/solve')
-def hello(board: list[list[int]]):
-    result = solve_kakuro(board)
-    return {'result': result}
+@app.route('/solve', methods=['POST'])
+def solve():
+    data = request.get_json()
+    board = data["board"]
+    solution = solve_kakuro(board)
+    print(solution)
+    return {'solution': solution}
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host="localhost", port=8003)
