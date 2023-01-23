@@ -1,2 +1,2 @@
-# Vercel flask
-A demo Flask application running on Vercel
+# Kakuro
+A kakuro solver on a Flask application

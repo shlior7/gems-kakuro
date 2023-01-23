@@ -2,6 +2,8 @@ const fs = require('fs')
 const path = require('path')
 const cheerio = require('cheerio');
 
+//scraping https://www.kakuroconquest.com/
+
 const fsReadFileHtml = (fileName) => {
   return new Promise((resolve, reject) => {
     fs.readFile(path.join(__dirname, fileName), 'utf8', (error, htmlString) => {
@@ -80,5 +82,5 @@ const parseKakuroFromHtml = (fileName) => {
 
 }
 
-parseKakuroFromHtml('kakuro3.html')
+parseKakuroFromHtml('kakuro1.html')
 
