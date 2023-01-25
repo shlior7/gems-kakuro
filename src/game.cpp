@@ -13,53 +13,41 @@ int empty_cells_count(unique_ptr<block> &b)
 	return empty_cells;
 }
 
-bool Game::solver(bool v = true)
+bool Game::solver(bool v)
 {
 	for (auto &b : game_board->sum_cells.the_list)
 	{
-		//	cout << "K: " << k->down <<"  "<<k->right<<endl;
 		if (v)
 		{
 			solve_vertical(b);
 			if (b->v_physical_sum() != b->v_logical_sum())
-				return true;
+				return false;
 		}
 		else
 		{
 			solve_horizontal(b);
 			if (b->h_physical_sum() != b->h_logical_sum())
-				return true;
+				return false;
 		}
 	}
-	// gameBoard->print();
-	// cout << "finished"<<endl;
-	return false;
+	return true;
 }
 
-bool Game::solve_vertical(sum_cell_ptr b)
+void Game::solve_vertical(sum_cell_ptr b)
 {
 	if (b->vertical_block)
 		for (auto &n_cell : b->vertical_block->numbers_block.the_list)
 		{
-			//	cout << "n_cell down: " << n_cell->val << " x,y: " << n_cell->x << " ," << n_cell->y << endl;
 			if (!n_cell->val)
-				for (int n = 1; n < 10; n++)
+				for (int n = b->vertical_block->min; n <= b->vertical_block->max; n++)
 					if (possible(n_cell->v_sum_cell, n_cell->h_sum_cell, n))
 					{
 						n_cell->val = n;
 						n_cell->v_sum_cell->vertical_block->add_to_sum(n);
 						if (n_cell->h_sum_cell)
 							n_cell->h_sum_cell->horizontal_block->add_to_sum(n);
-						//	cout <<endl<< "n_cell down: " << n_cell->val << " x,y: " << n_cell->x << " ," << n_cell->y << endl;
-						// cout << "try Val: "<< n<<endl;
-						// gameBoard->print();
-						i++;
-						// printf("%d\n", i);
-						if (i % 1000000 == 0)
-						{
-							game_board->print();
-						}
-						if (solver(false))
+
+						if ((b->vertical_block->empty_cells_count() == 0 && b->vertical_block->remain() != 0) || !solver(false))
 						{
 							n_cell->val = 0;
 							n_cell->v_sum_cell->vertical_block->add_to_sum(-n);
@@ -67,21 +55,21 @@ bool Game::solve_vertical(sum_cell_ptr b)
 								n_cell->h_sum_cell->horizontal_block->add_to_sum(-n);
 						}
 						else
-							return false;
+							break;
 					}
 			if (!n_cell->val)
-				return true;
+				break;
 		}
 }
 
-bool Game::solve_horizontal(sum_cell_ptr b)
+void Game::solve_horizontal(sum_cell_ptr b)
 {
+
 	if (b->horizontal_block)
 		for (auto &n_cell : b->horizontal_block->numbers_block.the_list)
 		{
-			//	cout << "n_cell right: " << n_cell->val <<" x,y: "<<n_cell->x<<" ,"<<n_cell->y<<endl;
 			if (!n_cell->val)
-				for (int n = 1; n <= 10; n++)
+				for (int n = b->horizontal_block->min; n <= b->horizontal_block->max; n++)
 				{
 					if (possible(n_cell->v_sum_cell, n_cell->h_sum_cell, n))
 					{
@@ -89,11 +77,8 @@ bool Game::solve_horizontal(sum_cell_ptr b)
 						n_cell->h_sum_cell->horizontal_block->add_to_sum(n);
 						if (n_cell->v_sum_cell)
 							n_cell->v_sum_cell->vertical_block->add_to_sum(n);
-						//	cout << endl << "n_cell right: " << n_cell->val << " x,y: " << n_cell->x << " ," << n_cell->y << endl;
-						//		cout << "try Val: " << n<<endl;
-						// gameBoard->print();
-						i++;
-						if (solver(true))
+
+						if (!solver(true))
 						{
 							n_cell->val = 0;
 							n_cell->h_sum_cell->horizontal_block->add_to_sum(-n);
@@ -101,11 +86,11 @@ bool Game::solve_horizontal(sum_cell_ptr b)
 								n_cell->v_sum_cell->vertical_block->add_to_sum(-n);
 						}
 						else
-							return false;
+							break;
 					}
 				}
 			if (!n_cell->val)
-				return true;
+				break;
 		}
 }
 

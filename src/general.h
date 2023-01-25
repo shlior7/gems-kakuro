@@ -12,6 +12,7 @@
 #include <vector>
 #include <iomanip>
 #include <memory>
+#include <unistd.h>
 
 #define OK 2
 #define ALREADY_EXISTS 1

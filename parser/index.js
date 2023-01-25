@@ -82,5 +82,5 @@ const parseKakuroFromHtml = (fileName) => {
 
 }
 
-parseKakuroFromHtml('kakuro1.html')
+parseKakuroFromHtml('kakuro_extreme.html')
 

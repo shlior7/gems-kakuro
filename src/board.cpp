@@ -156,41 +156,7 @@ void Board::print()
 		cout << "|\n";
 	}
 	cout << endl;
-	/*for(auto& i:k_list.c_list)
-	{
-		cout << "k: "<<endl;
-		i->printList();
-	}*/
-}
-vector<vector<int>> Board::toVector()
-{
-	vector<vector<int>> result;
-	for (int i = 0; i < height; i++)
-	{
-		vector<int> row;
-		for (int j = 0; j < width; j++)
-		{
-			if (typeid(*array[index(j, i)]) == typeid(sum_cell))
-			{
-				sum_cell_ptr k = dynamic_pointer_cast<sum_cell>(array[index(j, i)]);
-				row.push_back(k->v_logical_sum());
-				row.push_back(k->h_logical_sum());
-			}
-			else if (typeid(*array[index(j, i)]) == typeid(number_cell))
-			{
-				number_cell_ptr o = dynamic_pointer_cast<number_cell>(array[index(j, i)]);
-				row.push_back(o->val);
-				row.push_back(o->val);
-			}
-			else
-			{
-				row.push_back(-1);
-				row.push_back(-1);
-			}
-		}
-		result.push_back(row);
-	}
-	return result;
+	sleep(1);
 }
 
 void Board::sort_sum_cells()
